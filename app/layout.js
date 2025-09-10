@@ -4,16 +4,6 @@ import Footer from '@/components/Footer'
 import './../styles/globals.css'
 import './../styles/grid.css'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-})
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-})
-
 export const metadata = {
   title: 'Tell Technologies',
   description: '',
@@ -31,7 +21,7 @@ export default function RootLayout({ children }) {
           crossOrigin='anonymous'
         />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body>
         <Header />
         {children}
         <Footer />

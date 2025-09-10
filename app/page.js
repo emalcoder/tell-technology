@@ -16,7 +16,7 @@ export default function Home() {
               <div>
                 <div>
                   <h4 className='text-4xl'>
-                    We are the source of possibilities — and we're just getting started
+                    We are the source of possibilities — and we&apos;re just getting started
                   </h4>
                 </div>
               </div>
@@ -34,10 +34,10 @@ export default function Home() {
               <div className='flex items-center'>
                 <div>
                   <p className='pb-12 last:pb-0'>
-                    At Tell Technologies, we believe technology is more than just innovation — it's
-                    the engine of possibility. Founded on the principle that progress begins with
-                    bold ideas, we exist to empower people, organizations, and industries to go
-                    beyond what they thought was possible.
+                    At Tell Technologies, we believe technology is more than just innovation —
+                    it&apos;s the engine of possibility. Founded on the principle that progress
+                    begins with bold ideas, we exist to empower people, organizations, and
+                    industries to go beyond what they thought was possible.
                   </p>
                   <p className='pb-12 last:pb-0'>
                     We are creators, problem-solvers, and explorers, committed to shaping a future
@@ -175,10 +175,10 @@ export default function Home() {
                     We are here for you, contact us
                   </h1>
                   <p className=''>
-                    We’re here to help you stay connected, protected, and ahead of the curve.
-                    Whether you're looking for expert advice, need support with one of our services,
-                    or want to learn more about our services and solutions — our team is ready to
-                    assist.
+                    We&apos;re here to help you stay connected, protected, and ahead of the curve.
+                    Whether you&apos;re looking for expert advice, need support with one of our
+                    services, or want to learn more about our services and solutions — our team is
+                    ready to assist.
                   </p>
                 </div>
               </div>

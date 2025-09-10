@@ -96,11 +96,7 @@ const Footer = () => {
                   </div>
                   <div>
                     <button className='bg-blue-900 text-white flex items-center justify-center w-full rounded-xl'>
-                      {!loading ? (
-                        'Send Message'
-                      ) : (
-                        <ClipLoader color={'#fff'} loading={loading} size={30} />
-                      )}
+                      {!loading ? 'Send Message' : '...'}
                     </button>
                   </div>
                 </form>
