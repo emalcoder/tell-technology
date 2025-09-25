@@ -18,9 +18,9 @@ const HeroSection = () => {
     })
   }
   return (
-    <section className='h-screen bg-blue-400 bg-[url(/hero.jpg)] bg-no-repeat bg-center bg-cover text-white relative'>
+    <section className='h-screen bg-[url(/hero.jpg)] bg-no-repeat bg-center bg-cover text-white relative'>
       <video autoPlay muted loop playsInline className='w-full h-full object-cover'>
-        <source src='/my-video8.mp4' type='video/mp4' />
+        <source src='/my-video.mp4' type='video/mp4' />
       </video>
       <div className='absolute top-0 left-0 right-0 bottom-0 z-10 w-full h-full opacity-100 transition-custom bg-black/[.50]'>
         <div className='flex justify-between absolute top-1/2 left-24 transform -translate-y-1/2 font-inter'>

@@ -75,10 +75,13 @@ export default function services() {
           </div>
         </div>
       </section>
-      <section className='relative -z-30' id='it-services'>
+      <section
+        className='bg-[url(/services2.jpg)] bg-no-repeat bg-center bg-cover relative -z-30'
+        id='it-services'
+      >
         <div className='absolute bottom-0 right-0 w-auto min-w-full min-h-full max-w-none -z-20'>
           <video autoPlay muted loop playsInline className='w-full h-full object-cover'>
-            <source src='/bg-services3.mp4' type='video/mp4' />
+            <source src='/bg-services.mp4' type='video/mp4' />
           </video>
         </div>
         <div className='absolute top-0 left-0 right-0 bottom-0 w-full h-full opacity-100 -z-10 transition-custom bg-black/[.65]'></div>
