@@ -5,24 +5,26 @@ import { useRef } from 'react'
 
 const ScrollCarousel = () => {
   return (
-    <section className='mt-36' id='our-solutions'>
-      <div className='container'>
-        <div className='row justify-center'>
-          <div className='col-lg-9'>
-            <div className='mt-8 mb-12'>
-              <h2 className='text-5xl font-bold'>Our solutions go beyond services</h2>
-            </div>
-            <div>
-              <p className='text-lg'>
-                we build custom strategies that safeguard your digital assets, elevate your online
-                presence, and drive business growth. From cybersecurity to software and application
-                development, our expert team delivers innovative, scalable solutions tailored to
-                your unique needs.
-              </p>
-            </div>
+    <section
+      className='pt-36 bg-[url(/scroll-overlay4.png)] bg-no-repeat bg-cover'
+      id='our-solutions'
+    >
+      <div className='flex justify-center ml-[27.5rem] pr-36'>
+        <div className=''>
+          <div className='mt-8 mb-12'>
+            <h2 className='text-5xl font-bold uppercase'>Our solutions go beyond services</h2>
+          </div>
+          <div>
+            <p className=''>
+              We build custom strategies that safeguard your digital assets, elevate your online
+              presence, and drive business growth. From cybersecurity to software and application
+              development, our expert team delivers innovative, scalable solutions tailored to your
+              unique needs.
+            </p>
           </div>
         </div>
       </div>
+
       <HorizontalScrollCarousel />
     </section>
   )
@@ -64,7 +66,7 @@ const Card = ({ card }) => {
         <h3 className='bg-gradient-to-br from-white/20 to-white/0 p-8 m-8 mr-16 mb-2 text-3xl font-black uppercase text-white backdrop-blur-lg rounded-xl'>
           {card.title}
         </h3>
-        <p className='bg-gradient-to-br from-white/20 to-white/0 p-8 m-8 mr-16 text-lg font-black text-white backdrop-blur-lg rounded-xl'>
+        <p className='bg-gradient-to-br from-white/20 to-white/0 p-8 m-8 mr-16 font-black text-white backdrop-blur-lg rounded-xl'>
           {card.descriptionText}
         </p>
       </div>

@@ -10,6 +10,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-lato: var(--font-lato-sans);
+  --font-inter: var(--font-inter-sans);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,17 +24,28 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter, Arial, Lato, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
   overflow-x: hidden;
 }
 
 input,
 select {
-  @apply box-border text-base w-full h-10 border-1 border-gray-400 focus:border-blue-400 mb-4 px-4 py-2 outline-none focus:outline-none;
+  @apply box-border text-base w-full h-10 bg-gray-900 mb-4 px-4 py-2 outline-none focus:outline-none rounded-xl;
 }
 textarea {
-  @apply box-border text-base w-full border-1 border-gray-400 focus:border-blue-400 mb-12 px-4 py-2 outline-none focus:outline-none;
+  @apply box-border text-base w-full bg-gray-900 mb-6 px-4 py-2 outline-none focus:outline-none rounded-xl;
 }
 button {
   @apply px-8 py-2 text-base h-12;
+}
+
+.bg-tile-middle-lg {
+  background-image: linear-gradient(to top, #0d1117, rgba(13, 17, 23, 0) 15%),
+    linear-gradient(#0d1117, rgba(13, 17, 23, 0) 15%),
+    radial-gradient(circle farthest-side, rgba(13, 17, 23, 0), #0d1117), url('/about-2.svg');
+  background-position: 0 0, 0 0, 0 0, -1px -1px;
+  background-size: auto, auto, auto, 64px;
+  position: relative;
 }

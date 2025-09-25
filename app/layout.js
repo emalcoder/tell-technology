@@ -1,8 +1,29 @@
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Geist, Geist_Mono, Lato, Inter } from 'next/font/google'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import './../styles/globals.css'
 import './../styles/grid.css'
+
+const geistSans = Geist({
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
+})
+
+const geistMono = Geist_Mono({
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
+})
+
+const latoSans = Lato({
+  weight: ['100', '300', '400', '700', '900'],
+  variable: '--font-lato-sans',
+  subsets: ['latin'],
+})
+
+const interSans = Inter({
+  variable: '--font-inter-sans',
+  subsets: ['latin'],
+})
 
 export const metadata = {
   title: 'Tell Technologies',
@@ -21,9 +42,16 @@ export default function RootLayout({ children }) {
           crossOrigin='anonymous'
         />
       </head>
-      <body>
-        <Header />
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${latoSans.variable} ${interSans.variable} antialiased`}
+      >
+        <div className='relative'>
+          <div className='absolute top-0 left-0 z-50 min-w-full'>
+            <Header />
+          </div>
+        </div>
         {children}
+
         <Footer />
       </body>
     </html>
